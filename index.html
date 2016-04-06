@@ -78,17 +78,15 @@
   <div class="container nowshowing">
     <div class="col-sm-12">
       <h3>NOW&nbsp;SHOWING</h3>
-      <h4><a href="https://www.pcs.org/expectations/#showtimes">Great Expectations</a></h4>
+      <h4><a href="http://www.portlandplayhouse.org/peter-and-the-starcatcher">Peter and the Starcatcher</a></h4>
     </div><!-- /col-lg-6 -->
   </div>
 </div>
 <div id="nowshowingwrap">
-<a style="display:block; width:100%; height: 100%" href="https://www.pcs.org/expectations/#showtimes">&nbsp;</a>
+<a style="display:block; width:100%; height: 100%" href="http://www.portlandplayhouse.org/peter-and-the-starcatcher">&nbsp;</a>
 </div>
 <div id="nowshowingspacer">
 </div>
-
-
 
     <!-- TWEETINGS -->
     <div id="quotes">
@@ -679,12 +677,22 @@
 	 <script src="assets/js/classie.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script src="assets/js/gnmenu.js"></script>
-    <script src="assets/js/twitterFetcher_v10_min.js"></script>
+    <script src="assets/js/twitterFetcher_min.js"></script>
 	<script>
 		new gnMenu( document.getElementById( 'gn-menu' ) );
 	</script>
 	<script>
-        twitterFetcher.fetch('432268393421340672', '', 11, true, false, false, '', false, handleTweets);
+        twitterFetcher.fetch({
+          "id": '432268393421340672',
+          "domId": '',
+          "maxTweets": 11,
+          "enableLinks": true,
+          "showUser": false,
+          "showTime": false,
+          "dateFunction": '',
+          "showRetweet": false,
+          "customCallback": handleTweets
+        });
 
         function handleTweets(tweets){
             var x = tweets.length;
