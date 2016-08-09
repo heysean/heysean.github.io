@@ -206,13 +206,13 @@ a:after {
 }
 
 #nowshowingwrap {
-	background: url(../img/peter-and-the-starcatcher.jpeg) no-repeat center;
+	background: #222 no-repeat center;
     background-color:#222;
 	margin-top: 0px;
 	padding-top:0px;
 	text-align:center;
 	background-attachment: scroll;
-	height:500px;
+	height:50px;
 	width: 100%;
 
     -webkit-background-size: contain;
@@ -496,7 +496,7 @@ a:after {
 }
 
 .form-group label {
-	font-family: 'Raleway'; sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 }
@@ -524,7 +524,7 @@ a:after {
 }
 
 
-@media (max-width: 1200px) and (min-width: 1018px) {
+@media (max-width: 1200px) and (min-width: 1200px) {
 	.imgright {
 	}
 }
@@ -555,7 +555,7 @@ a:after {
         display:none;
     }
 }
-@media(min-width:1018px){
+@media(min-width:1200px){
     #quotes {
         min-height: 300px;
     }
